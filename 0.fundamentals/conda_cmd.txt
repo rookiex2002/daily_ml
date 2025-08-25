@@ -1,0 +1,22 @@
+cd Desktop
+mkdir project
+conda create -n env1
+conda info --envs
+conda activate env1
+conda install jupyterlab
+pip list --format=freeze    # to view req file
+pip list --format=freeze > requirements.txt # make requirement files
+ls
+pip install -r requirements.txt
+
+# remove env package
+conda remove -n python3.9(package name) --all 
+conda remove --name env1 --all
+
+
+
+# we also have to select the ipykernel to use in notebook
+
+conda create -n env1 python pandas notebook ipykernel
+conda activate env1
+python -m ipykernel install --user --name=env1 --display-name " Python(myenv)"
