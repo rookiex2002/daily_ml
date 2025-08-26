@@ -6,6 +6,18 @@ __pycache__/
 # C extensions
 *.so
 
+
+# Ignore Word2Vec binary model files
+*.bin.gz
+*.bin
+
+# Ignore CSV files
+*.csv
+
+# Ignore SQLite database files
+*.sqlite
+*.sqlite3
+
 # Distribution / packaging
 .Python
 build/
